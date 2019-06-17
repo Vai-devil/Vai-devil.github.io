@@ -1,0 +1,119 @@
+.contact
+{   
+    padding-top:50px;
+    padding-bottom:50px;
+    position: relative;
+    min-height: 10vh;
+    background: #232323;
+    max-width: 100%;
+}
+
+.contact-heading
+{
+    font-size: 3em;
+    font-weight: 500;
+    width: 100%;
+    text-align: left;
+    padding:20px;
+    color: rgb(120, 175, 159);
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.7);
+}
+
+.contact-heading::after
+{
+    margin-top:3px;
+    content: "";
+    height: 2px;
+    width: 25%;
+    background: rgba(228, 69, 69, 0.877);
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.7);
+    display: block;   
+}
+
+.contact-details
+{
+
+    margin:30px;
+    margin-bottom:0; 
+    position: relative;
+    Display:flex;
+    flex-direction: column;
+    
+    
+    .mail{
+        padding:5px 0;
+        margin: 2px 70px;
+        color:white;
+        margin-top:20px;
+        text-align: left;
+        font-weight: bold;
+
+        a{
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.856);
+            font-weight: 200;
+        }
+        
+    }
+}
+
+
+.social
+{   
+    padding: 4px 0px;
+    margin: 2px 70px;
+    display: flex;
+    flex-direction: row;
+    flex-basis: 30%;
+    justify-content: flex-start;
+    
+}
+.social-txt
+{
+    color: rgba(255, 255, 255, 0.856);
+    font-size:16px;
+    align-self: center;
+    font-weight: bold;
+}
+
+
+@media (min-width:50rem)
+{
+    .contact-details
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background: url("../images/stripes.svg");
+        
+    }
+    .social
+    {
+        align-items: flex-end;
+    }
+
+}
+
+
+footer
+{
+    height: 6vh;
+    text-align: right;
+    background-color:#e9e0baf1;
+    color:#232323;
+    padding:10px 20px; 
+    position: relative;
+    p
+    {
+        position: absolute;
+        display: block;
+        right:10px;
+
+    }
+     
+}
+
+.insta ,.fb , .linkedin
+{
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.7);
+}

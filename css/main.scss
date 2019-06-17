@@ -1,0 +1,221 @@
+@import './skills';
+@import './colours';
+*{
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    // font-family: 'Roboto Condensed', sans-serif;
+    // font-family: 'East Sea Dokdo', cursive;
+    font-family: 'Merienda', cursive;   
+    text-align: center;
+    margin: 0;
+}
+
+img{
+    max-height: 100%;
+    height: auto;
+}
+
+// header
+// =================>
+
+.hero-container
+{   
+    width: auto;
+    margin: 0 auto;
+    color: #fff;
+}
+//typography
+
+.title{
+    font-size: 2.5rem;
+    padding-bottom: 1.2rem;
+    
+    span{
+        
+        font-weight:200;
+        display: block;
+        font-size: 0.6em;
+        padding-top:0.5rem;
+        padding-bottom:0.5rem;   
+    }
+}
+
+
+@media(min-width:60rem)
+{
+    .title{
+        font-size: 3.5rem;
+        span{
+            font-size: 2rem;
+        }
+    }
+}
+
+
+
+
+
+//hero button
+.button{
+    display: inline-block;
+    font-size: 1.2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-width: 2px;
+    border-style: solid;
+    margin: 0.5em auto;
+    padding: .5em 1.75em;
+    
+}
+.button-accent{
+    color  : rgb(120,175,159);
+  
+}
+.button-accent:hover , .button-accent:focus{
+    background: rgb(120,175,159);
+    color:#fff;
+}
+
+@media (min-width:60rem)
+{   .button{
+    font-size : 1.5rem;
+}
+}
+
+
+// home-hero section
+.home-hero
+{
+ background: url(../images/02.jpg) no-repeat ;
+
+ padding: 10rem 0;
+background-position: center;
+background-size: cover;
+background-attachment: fixed;
+}
+
+
+@media (min-width:60rem)
+{
+    .home-hero{
+        height: 100vh;
+        padding-top:36vh; 
+    }
+}
+
+/*home-about*/
+.container-home
+{
+    background: #eee2aef1;
+    height: 100vh;
+}
+.home-about
+{
+    
+    p{
+        color: white;
+        font-size: 1.2em;
+        font-weight: 200;
+        letter-spacing: 1px;
+        line-height: 35px;
+    }
+    .home-about-text
+    {
+        background: #232323;
+        padding:3.5em;
+        width: 100vw;
+        margin:auto;
+        outline: 2px solid rgb(217,162,52);
+        outline-offset: -2.5em;
+        position: relative;   
+
+        
+    h1{
+        font-size: 2.5rem;
+        color: rgb(217,162,52);
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top:0.25em;
+        background: #232323;
+        padding: 0rem .5em;
+    }
+    }
+
+}
+@media (min-width:60rem)
+{
+.home-about
+{
+background : url(../images/bg1.jpg) no-repeat;
+background-position: top;
+background-size: contain;
+padding: 2em;
+.home-about-text
+    {  
+        margin-top:-4rem;
+        margin-left:4rem;
+        
+        width: 50%;
+        padding:4.5em;
+        left:-3rem;
+        position: relative;   
+        outline-offset: -3.5em;
+    }  
+
+    h1
+    {   
+        font-size: 5rem;
+        padding: 1rem 2rem;    
+        color: rgb(217,162,52);
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top:0.25em;
+        background: #232323;
+    }
+    p{
+        text-align:left;
+    padding: 1rem;
+    } }
+}
+@media (min-width:80rem)
+{
+    .home-about
+{ 
+background : url(../images/bg1.jpg) no-repeat;
+
+background-attachment: scroll; 
+background-position: top;
+background-size: contain;
+padding: 2em;
+       .home-about-text
+        {   margin-top:-4rem;
+            margin-left:7rem;
+            text-align: left;
+            width: 45%;
+            padding:4.5em;
+            left:-3rem;
+            position: relative;   
+            outline-offset: -3.5em;
+        }    
+        h1{
+            font-size: 3rem;
+            padding: 0 1em;
+        }
+        p{
+            padding: 2rem;
+        }
+    }
+
+}
+
+
+
+
+// to add properties of one to other thing 
+// write @extend header    <header is other stling element>
+// we can also perorm calculaiton in sass

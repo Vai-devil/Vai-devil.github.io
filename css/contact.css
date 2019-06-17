@@ -1,0 +1,122 @@
+.contact {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  position: relative;
+  min-height: 10vh;
+  background: #232323;
+  max-width: 100%;
+}
+
+.contact-heading {
+  font-size: 3em;
+  font-weight: 500;
+  width: 100%;
+  text-align: left;
+  padding: 20px;
+  color: #78af9f;
+  text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.7);
+}
+
+.contact-heading::after {
+  margin-top: 3px;
+  content: "";
+  height: 2px;
+  width: 25%;
+  background: rgba(228, 69, 69, 0.877);
+  -webkit-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.7);
+          box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.7);
+  display: block;
+}
+
+.contact-details {
+  margin: 30px;
+  margin-bottom: 0;
+  position: relative;
+  Display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact-details .mail {
+  padding: 5px 0;
+  margin: 2px 70px;
+  color: white;
+  margin-top: 20px;
+  text-align: left;
+  font-weight: bold;
+}
+
+.contact-details .mail a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.856);
+  font-weight: 200;
+}
+
+.social {
+  padding: 4px 0px;
+  margin: 2px 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.social-txt {
+  color: rgba(255, 255, 255, 0.856);
+  font-size: 16px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-weight: bold;
+}
+
+@media (min-width: 50rem) {
+  .contact-details {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background: url("../images/stripes.svg");
+  }
+  .social {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+}
+
+footer {
+  height: 6vh;
+  text-align: right;
+  background-color: #e9e0baf1;
+  color: #232323;
+  padding: 10px 20px;
+  position: relative;
+}
+
+footer p {
+  position: absolute;
+  display: block;
+  right: 10px;
+}
+
+.insta, .fb, .linkedin {
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.7);
+}
+/*# sourceMappingURL=contact.css.map */

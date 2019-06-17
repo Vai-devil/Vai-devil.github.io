@@ -1,0 +1,162 @@
+html{
+    scroll-behavior: smooth;
+}
+
+.body{
+    
+    overflow: hidden;
+}
+.skill-wrapper
+{   position: relative;
+    display: flex;
+    padding:30px;
+    min-height:80vh;
+    justify-content: center;
+    flex-direction: row;
+    padding-bottom:60px; 
+}
+
+/*
+#a16e83
+*/
+.skill-text{
+    background:#232323;
+    display: block;
+    color:#78af96;
+    font-size: 3em;
+    text-align:left;
+    padding: 70px;
+    margin-top:0; 
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.7);
+}
+.skill-text::after{
+    content: "";
+    display: block;
+    height:2px;
+    width:25%;
+    z-index: 2;
+    background: rgba(228, 69, 69, 0.877);
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.7);
+}
+.tech-skills
+{   
+    padding:20px 50px 110px 50px;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background:#232323;
+    
+}
+.stxt{
+    margin:auto;
+    width: 90%;
+    display: flex;
+    color:white;
+    justify-content: space-between;
+
+    .skill-name
+    {
+        text-align:left;
+        color:#fff;
+        float:left;
+    }
+    .skill-percentage
+
+        {   
+            text-align:right;
+            float:right;
+        }
+   
+    }
+
+.skill
+{
+    
+    padding :20px 30px;
+    width: 100%;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    
+}
+.slideleft
+{
+    opacity: 0;
+    transform:translateX(-30px);
+    transition: all 1s ease-in-out;
+}
+.slideInLeft
+{ 
+    opacity:1;
+    transform:translateX(0);
+}
+.progressbar{
+    background: rgba(231, 151, 151, 0.89);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
+}
+.bar1
+{
+    background: rgb(252, 241, 92);
+    height: 12px;
+    width: 75%;
+    animation: fillbar 0.8;
+  
+}
+
+.bar2
+{
+    background: rgb(252, 241, 92);
+    height: 12px;
+    width: 90%;
+}
+
+.bar3
+{
+    background: rgb(252, 241, 92);
+    height: 12px;
+    width: 86%;
+}
+.bar4
+{
+    background: rgb(252, 241, 92);
+    height: 12px;
+    width: 91%;
+}
+.bar5
+{
+    background: rgb(252, 241, 92);
+    height: 12px;
+    width: 73%;
+}
+.bar6
+{
+    background: rgb(252, 241, 92);
+    height: 12px;
+    width: 92%;
+}
+
+
+
+
+@media (min-width:60rem)
+{
+.skill-text{
+    font-size:4rem;
+}
+
+.tech-skills
+{   
+    flex-wrap: wrap;
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    background:#232323;
+}
+.skill
+{
+max-width: 50%;
+}
+}
+
+
